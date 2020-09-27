@@ -5,20 +5,22 @@
 
 .textContainer>* {
     opacity: 0;
+    transform: translateX(-3rem);
 }
 
 .anim > * {
-  opacity: 1;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .anim>*:first-child {
-  transition: opacity .5s;
+  transition: opacity 1s, transform 1s;
 }
 
 .anim>*:nth-child(2) {
-  transition: opacity .5s .5s;
+  transition: opacity 1s 1s, transform 1s 1s;
 }
 
 .anim>*:last-child {
-  transition: opacity .5s 1s;
+  transition: opacity 1s 2s, transform 1s 2s;
 }
