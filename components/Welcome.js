@@ -46,41 +46,7 @@ const useStyles = makeStyles((theme) => ({
             }
         },
     },
-    floatingContainer: {
-        position: 'fixed',
-        top: theme.spacing(2),
-        right: theme.spacing(3),
-        display: 'flex',
-        flexDirection: 'row',
-    },
-    floatingButton: {
-        borderRadius: '50%',
-        backgroundColor: 'white',
-        marginLeft: theme.spacing(2),
-        '&:hover': {
-            backgroundColor: 'rgb(205,205,205)',
-        }
-    },
 }));
-
-function FloatingButtons(){
-    const classes = useStyles();
-
-    return (
-        <div className={classes.floatingContainer}>
-            <div className={classes.floatingButton}>
-                <IconButton href={"../CV-Pierre-Giraud.pdf"}>
-                    <AttachFileIcon/>
-                </IconButton>
-            </div>
-            <div className={classes.floatingButton}>
-                <IconButton href={"http://github.com/Pierre-Giraud"}>
-                    <GitHubIcon/>
-                </IconButton>
-            </div>
-        </div>
-    )
-}
 
 export default function Welcome(){
     const classes = useStyles();
@@ -92,7 +58,6 @@ export default function Welcome(){
 
     return(
         <>
-            <FloatingButtons/>
             <div className={classes.container}>
                 <Grid container justify={"center"} alignItems={"center"} className={classes.main}>
                     <Grid item sm={8} md={7}>
