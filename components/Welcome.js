@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Typography from "@material-ui/core/Typography";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import IconButton from "@material-ui/core/IconButton";
-import AttachFileIcon from '@material-ui/icons/AttachFile';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 
@@ -14,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         zIndex: -1,
         position: 'relative',
-        width: '100%',
+        width: '100vw',
         height: '100vh',
         background: "linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('/welcomeBgImage.jpg')",
         backgroundRepeat: 'no-repeat',
@@ -46,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
             }
         },
     },
+    persoOrdi: {
+        width: '100%',
+        height: '100%',
+    }
 }));
 
 export default function Welcome(){
@@ -59,8 +60,8 @@ export default function Welcome(){
     return(
         <>
             <div className={classes.container}>
-                <Grid container justify={"center"} alignItems={"center"} className={classes.main}>
-                    <Grid item sm={8} md={7}>
+                <Grid container justify={"center"} alignItems={"center"}>
+                    <Grid item sm={8} md={6}>
                         <Container className={classes.grid1}>
                             <div className={`${classes.textContainer} ${visible ? classes.anim : ''}`}>
                                 <Typography variant={"h1"} component={"h2"}>
@@ -75,8 +76,10 @@ export default function Welcome(){
                             </div>
                         </Container>
                     </Grid>
-                    <Grid item sm={8} md={5} >
-                        <p>image du bonhomme</p>
+                    <Grid item sm={8} md={6}>
+                        <Container>
+                            <img className={classes.persoOrdi} src={"/perso_ordi.png"} alt={""}/>
+                        </Container>
                     </Grid>
                 </Grid>
             </div>

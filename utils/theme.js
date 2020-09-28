@@ -2,6 +2,9 @@ import {createMuiTheme} from "@material-ui/core/styles";
 import React from "react";
 
 const stdTheme = {
+    typography: {
+        fontFamily: 'Roboto Mono, monospace'
+    },
     overrides: {
         MuiCssBaseline: {
             '@global': {
@@ -40,23 +43,23 @@ export const getTheme = () => {
 function addTypographyOnTheme(theme){
     theme.typography.h1 = {
         fontWeight: 400,
-        fontSize: '5em',
-        [theme.breakpoints.down('lg')]: {
-            fontSize: '4em',
-        },
-        [theme.breakpoints.down('sm')]: {
-            fontSize: '3em',
-        },
-    };
-
-    theme.typography.h2 = {
-        fontWeight: 300,
-        fontSize: '3em',
+        fontSize: '4em',
         [theme.breakpoints.down('lg')]: {
             fontSize: '3em',
         },
         [theme.breakpoints.down('sm')]: {
             fontSize: '2em',
+        },
+    };
+
+    theme.typography.h2 = {
+        fontWeight: 300,
+        fontSize: '2.5em',
+        [theme.breakpoints.down('lg')]: {
+            fontSize: '2.5em',
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '1.5em',
         },
     };
     theme.typography.h3 = {
@@ -68,5 +71,8 @@ function addTypographyOnTheme(theme){
         [theme.breakpoints.down('sm')]: {
             fontSize: '2em',
         },
+    };
+    theme.typography.body1 = {
+        //fontWeight: 400,
     };
 }
