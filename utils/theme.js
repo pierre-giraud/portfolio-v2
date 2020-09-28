@@ -29,6 +29,10 @@ const stdTheme = {
         },
         secondary: {
             main: 'rgb(60,60,60)'
+        },
+        text: {
+            primary: 'white',
+            secondary: 'rgb(175,175,175)',
         }
     }
 };

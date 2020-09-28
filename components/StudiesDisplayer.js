@@ -16,8 +16,12 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: theme.typography.pxToRem(16),
         },
-        flexGrow: 1,
+        flexGrow: '50%',
         flexShrink: 0,
+    },
+    secondaryHeading: {
+        fontSize: theme.typography.pxToRem(20),
+        color: theme.palette.text.secondary,
     },
     icon: {
         color: 'white'
@@ -57,7 +61,10 @@ export default function StudiesDisplayer(){
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
                 >
-                    <Typography className={classes.heading}>Master Informatique</Typography>
+                    <div>
+                        <Typography className={classes.heading}>Master Informatique</Typography>
+                        <Typography className={classes.secondaryHeading}>Septembre 2019 - Aujourd'hui</Typography>
+                    </div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -72,7 +79,10 @@ export default function StudiesDisplayer(){
                     aria-controls="panel2bh-content"
                     id="panel2bh-header"
                 >
-                    <Typography className={classes.heading}>Licence 3 Informatique</Typography>
+                    <div>
+                        <Typography className={classes.heading}>Licence 3 Informatique</Typography>
+                        <Typography className={classes.secondaryHeading}>Septembre 2018 - Juillet 2019</Typography>
+                    </div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -86,7 +96,10 @@ export default function StudiesDisplayer(){
                     aria-controls="panel3bh-content"
                     id="panel3bh-header"
                 >
-                    <Typography className={classes.heading}>DUT Informatique</Typography>
+                    <div>
+                        <Typography className={classes.heading}>DUT Informatique</Typography>
+                        <Typography className={classes.secondaryHeading}>Septembre 2015 - Juillet 2017</Typography>
+                    </div>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
