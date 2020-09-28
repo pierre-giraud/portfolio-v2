@@ -39,7 +39,8 @@ const useStyles = makeStyles((theme) =>({
         minHeight: '100vh',
     },
     white: {
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        color: 'black'
     },
     floatingContainer: {
         position: 'fixed',
