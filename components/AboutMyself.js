@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) =>({
         paddingBottom: theme.spacing(5),
         textAlign: 'center',
     },
-    persoOrdi: {
+    perso: {
         width: '100%',
         height: '100%',
     }
@@ -37,7 +37,7 @@ export default function AboutMyself(){
                 <Grid container justify={"center"} alignItems={"center"}>
                     <Grid item sm={8} md={6}>
                         <Container>
-                            <img className={classes.persoOrdi} src={"/perso_ordi.png"} alt={""}/>
+                            <img className={classes.perso} src={"/perso_diplome.png"} alt={""}/>
                         </Container>
                     </Grid>
                     <Grid item sm={8} md={6}>

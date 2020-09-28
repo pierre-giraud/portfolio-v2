@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f45b13b7-6f25-4a26-9c14-e748626a2d84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AboutMyself.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutMyself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/StudiesDisplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/StudiesDisplayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601168227273</updated>
       <workItem from="1601168229033" duration="11339000" />
-      <workItem from="1601215490895" duration="36676000" />
+      <workItem from="1601215490895" duration="37042000" />
+      <workItem from="1601323560836" duration="7118000" />
     </task>
     <servers />
   </component>

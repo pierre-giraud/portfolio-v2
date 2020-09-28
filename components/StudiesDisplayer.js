@@ -16,15 +16,19 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: theme.typography.pxToRem(16),
         },
-        flexGrow: '50%',
-        flexShrink: 0,
     },
     secondaryHeading: {
         fontSize: theme.typography.pxToRem(20),
+        [theme.breakpoints.down('sm')]: {
+            fontSize: theme.typography.pxToRem(14),
+        },
         color: theme.palette.text.secondary,
     },
     icon: {
         color: 'white'
+    },
+    detailsContainer: {
+        width: '50%',
     }
 }));
 
@@ -41,9 +45,20 @@ const AccordionDetails = withStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.secondary.light,
         color: 'white',
-        padding: theme.spacing(2)
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column'
+        },
+        '&>*': {
+            margin: theme.spacing(1)
+        },
     }
 }))(MuiAccordionDetails);
+
+const HeaderTypography = withStyles((theme) => ({
+    root: {
+        marginBottom: theme.spacing(1),
+    }
+}))(Typography);
 
 export default function StudiesDisplayer(){
     const classes = useStyles();
@@ -67,10 +82,23 @@ export default function StudiesDisplayer(){
                     </div>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Deux dernières années de ma formation, j'ai choisi le parcours GIL (Génie de l'Informatique
-                        Logicielle) afin de me spécialiser dans le développement d'applications.
-                    </Typography>
+                    <div className={classes.detailsContainer}>
+                        <HeaderTypography variant={"h3"}>
+                            A la clé ...
+                        </HeaderTypography>
+                        <Typography>
+                            Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                            carrière dans le développement web.
+                        </Typography>
+                    </div>
+                    <div className={classes.detailsContainer}>
+                        <HeaderTypography variant={"h3"}>
+                            Des compétences acquises
+                        </HeaderTypography>
+                        <Typography>
+                            Liste des compétences ...
+                        </Typography>
+                    </div>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -104,6 +132,61 @@ export default function StudiesDisplayer(){
                 <AccordionDetails>
                     <Typography>
                         Détails DUT
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+                        Un stage de 6 mois me permettant de valider mon parcours et d'entamer une
+                        carrière dans le développement web.
+
                     </Typography>
                 </AccordionDetails>
             </Accordion>

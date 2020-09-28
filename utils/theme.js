@@ -67,16 +67,16 @@ function addTypographyOnTheme(theme){
         },
     };
     theme.typography.h3 = {
-        fontWeight: 300,
-        fontSize: '3em',
+        fontWeight: 400,
+        fontSize: '2em',
         [theme.breakpoints.down('lg')]: {
-            fontSize: '2.5em',
+            fontSize: '1.5em',
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: '2em',
+            fontSize: '1em',
         },
     };
     theme.typography.body1 = {
-        //fontWeight: 400,
+        fontWeight: 300,
     };
 }
