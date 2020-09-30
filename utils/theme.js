@@ -3,7 +3,8 @@ import React from "react";
 
 const stdTheme = {
     typography: {
-        fontFamily: 'Roboto Mono, monospace'
+        //fontFamily: 'Roboto Mono, monospace'
+        fontFamily: 'Roboto, sans-serif'
     },
     overrides: {
         MuiCssBaseline: {
@@ -34,9 +35,6 @@ const stdTheme = {
             primary: 'white',
             secondary: 'rgb(175,175,175)',
         },
-        warning: {
-            main: '#ff9800'
-        }
     }
 };
 
