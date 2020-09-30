@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Accordion from "@material-ui/core/Accordion";
 import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
@@ -62,7 +62,7 @@ const HeaderTypography = withStyles((theme) => ({
 
 export default function StudiesDisplayer(){
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);

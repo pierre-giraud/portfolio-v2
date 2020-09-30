@@ -33,6 +33,9 @@ const stdTheme = {
         text: {
             primary: 'white',
             secondary: 'rgb(175,175,175)',
+        },
+        warning: {
+            main: '#ff9800'
         }
     }
 };

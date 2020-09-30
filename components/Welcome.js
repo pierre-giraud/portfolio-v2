@@ -3,6 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
+import Alert from '@material-ui/lab/Alert';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -46,6 +47,18 @@ const useStyles = makeStyles((theme) => ({
     persoOrdi: {
         width: '100%',
         height: '100%',
+    },
+    warning: {
+        textAlign: 'center',
+        width: '50%',
+        top: 10,
+        [theme.breakpoints.down('sm')]: {
+            width: '95%',
+            top: 80,
+        },
+        position: 'absolute',
+        left: '50%',
+        transform: 'translateX(-50%)'
     }
 }));
 
@@ -59,6 +72,11 @@ export default function Welcome(){
 
     return(
         <>
+            <div className={classes.warning}>
+                <Alert elevation={6} variant={"filled"} severity={"warning"}>
+                    Site en cours de développement ...
+                </Alert>
+            </div>
             <div className={classes.container}>
                 <Grid container justify={"center"} alignItems={"center"}>
                     <Grid item sm={8} md={6}>
