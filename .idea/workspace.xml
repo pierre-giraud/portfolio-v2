@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f45b13b7-6f25-4a26-9c14-e748626a2d84" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/WebProjects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AboutMyself.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutMyself.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/StudiesDisplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/StudiesDisplayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Welcome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +86,7 @@
       <workItem from="1601404945030" duration="3666000" />
       <workItem from="1601467377649" duration="2399000" />
       <workItem from="1601472221843" duration="8638000" />
-      <workItem from="1601574104479" duration="3494000" />
+      <workItem from="1601574104479" duration="9517000" />
     </task>
     <servers />
   </component>

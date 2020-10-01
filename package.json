@@ -15,7 +15,9 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scrollmagic": "^2.2.0",
+    "react-slick": "^0.27.11",
     "recoil": "0.0.13",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.0"
   }
 }

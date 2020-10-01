@@ -8,6 +8,7 @@ import IconButton from "@material-ui/core/IconButton";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import withStyles from "@material-ui/core/styles/withStyles";
+import WebProjects from "../components/WebProjects";
 
 const useShowOnScroll = () => {
     const [visible, setVisible] = useState(false);
@@ -37,6 +38,7 @@ const useStyles = makeStyles((theme) =>({
     },
     panel: {
        minHeight: '100vh',
+        backgroundColor: 'rgb(64,64,64)'
     },
     white: {
         backgroundColor: 'white',
@@ -103,10 +105,8 @@ export default function Home() {
                     </Scene>
 
                     <Scene pin>
-                        <div className={classes.panel + ' ' + classes.white}>
-                            <Typography variant={"h2"} component={"h2"}>
-                                Scène 3
-                            </Typography>
+                        <div className={classes.panel}>
+                            <WebProjects/>
                         </div>
                     </Scene>
                     <Scene pin>
