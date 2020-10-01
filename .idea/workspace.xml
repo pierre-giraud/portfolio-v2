@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f45b13b7-6f25-4a26-9c14-e748626a2d84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/AboutMyself.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AboutMyself.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/StudiesDisplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/StudiesDisplayer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Welcome.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/theme.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +47,11 @@
     <property name="ts.external.directory.path" value="D:\dvpt\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\dvpt\Projets_Persos\mon-portfolio-v2\utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dvpt\Projets_Persos\mon-portfolio-v2\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dvpt\Projets_Persos\mon-portfolio-v2\utils" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -82,7 +84,8 @@
       <workItem from="1601323560836" duration="7174000" />
       <workItem from="1601404945030" duration="3666000" />
       <workItem from="1601467377649" duration="2399000" />
-      <workItem from="1601472221843" duration="3464000" />
+      <workItem from="1601472221843" duration="8638000" />
+      <workItem from="1601574104479" duration="3494000" />
     </task>
     <servers />
   </component>

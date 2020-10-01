@@ -14,6 +14,8 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         width: '100vw',
         height: '100vh',
+        //background: "linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.50) ), url('/welcomeBgImage.jpg')",
+        //background: "linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.70) ), url('/welcomeBgImage.jpg')",
         background: "linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('/welcomeBgImage.jpg')",
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',

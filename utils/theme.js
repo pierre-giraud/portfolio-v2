@@ -18,7 +18,7 @@ const stdTheme = {
     breakpoints: {
         values: {
             xs: 0,
-            sm: 600,
+            sm: 630,
             md: 1048,
             lg: 1280,
             xl: 1920,
@@ -49,10 +49,10 @@ function addTypographyOnTheme(theme){
     theme.typography.h1 = {
         fontWeight: 400,
         fontSize: '4em',
-        [theme.breakpoints.down('lg')]: {
+        [theme.breakpoints.down('sm')]: {
             fontSize: '3em',
         },
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
             fontSize: '2em',
         },
     };
@@ -60,21 +60,18 @@ function addTypographyOnTheme(theme){
     theme.typography.h2 = {
         fontWeight: 300,
         fontSize: '2.5em',
-        [theme.breakpoints.down('lg')]: {
-            fontSize: '2.5em',
-        },
         [theme.breakpoints.down('sm')]: {
+            fontSize: '2em',
+        },
+        [theme.breakpoints.down('xs')]: {
             fontSize: '1.5em',
         },
     };
     theme.typography.h3 = {
         fontWeight: 400,
         fontSize: '2em',
-        [theme.breakpoints.down('lg')]: {
-            fontSize: '1.5em',
-        },
         [theme.breakpoints.down('sm')]: {
-            fontSize: '1em',
+            fontSize: '1.5em',
         },
     };
     theme.typography.body1 = {

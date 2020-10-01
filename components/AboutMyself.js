@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) =>({
         minHeight: '100vh',
         backgroundColor: 'rgb(28,28,28)',
         color: 'white',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     title: {
         paddingTop: theme.spacing(5),
@@ -19,7 +22,7 @@ const useStyles = makeStyles((theme) =>({
     perso: {
         width: '100%',
         height: '100%',
-    }
+    },
 }));
 
 export default function AboutMyself(){
@@ -27,7 +30,7 @@ export default function AboutMyself(){
 
     return (
         <div className={classes.root}>
-            <div>
+            <Container maxWidth={false}>
                 <div className={classes.title}>
                     <Typography variant={"h1"} component={"h2"}>
                         Mon parcours
@@ -41,12 +44,12 @@ export default function AboutMyself(){
                         </Container>
                     </Grid>
                     <Grid item sm={8} md={6}>
-                        <Container>
+                        <Container maxWidth={false}>
                             <StudiesDisplayer/>
                         </Container>
                     </Grid>
                 </Grid>
-            </div>
+            </Container>
         </div>
     )
 }
