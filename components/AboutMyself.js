@@ -40,7 +40,7 @@ export default function AboutMyself(){
                 <Grid container justify={"center"} alignItems={"center"}>
                     <Grid item sm={8} md={6}>
                         <Container>
-                            <img className={classes.perso} src={"/perso_diplome.png"} alt={""}/>
+                            <img className={classes.perso} src={"/img/persos/perso_diplome.png"} alt={""}/>
                         </Container>
                     </Grid>
                     <Grid item sm={8} md={6}>

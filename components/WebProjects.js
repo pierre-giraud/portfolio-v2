@@ -1,41 +1,64 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import Slider from "react-slick";
+import Carousel from "./Carousel";
+import makeStyles from "@material-ui/core/styles/makeStyles";
 import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import StudiesDisplayer from "./StudiesDisplayer";
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        minHeight: '100vh',
+        backgroundColor: 'rgb(80,80,80)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    carouselContainer: {
+        paddingLeft: theme.spacing(6),
+        paddingRight: theme.spacing(6),
+    },
+    title: {
+        paddingTop: theme.spacing(5),
+        paddingBottom: theme.spacing(5),
+        textAlign: 'center',
+    },
+    perso: {
+        width: '100%',
+        height: '100%',
+    },
+}));
 
 export default function WebProjects(){
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
+    const classes = useStyles();
 
     return (
-        <div>
-            <Typography variant={"h2"} component={"h2"}>
-                Scène 3
-            </Typography>
-            <Container>
-                <Slider {...settings}>
-                    <div>
-                        <Typography variant={"h3"}>
-                            Test 1
-                        </Typography>
-                        <Typography variant={"h3"}>
-                            Carousel 1
-                        </Typography>
-                    </div>
-                    <div>
-                        <Typography variant={"h3"}>
-                            Test 1
-                        </Typography>
-                        <Typography variant={"h3"}>
-                            Carousel 2
-                        </Typography>
-                    </div>
-                </Slider>
+        <div className={classes.root}>
+            <Container maxWidth={false}>
+                <div className={classes.title}>
+                    <Typography variant={"h1"} component={"h2"}>
+                        Projets Web
+                    </Typography>
+                </div>
+
+                <Grid container justify={"center"} alignItems={"center"}>
+                    <Grid item sm={8} md={6}>
+                        <Container>
+                            <Typography>
+                                Description de la partie ...
+                            </Typography>
+                        </Container>
+                    </Grid>
+                    <Grid item sm={8} md={6}>
+                        <Container>
+                            <img className={classes.perso} src={"/img/persos/perso_surf.png"} alt={""}/>
+                        </Container>
+                    </Grid>
+                </Grid>
+
+                <div className={classes.carouselContainer}>
+                    <Carousel/>
+                </div>
             </Container>
         </div>
     )

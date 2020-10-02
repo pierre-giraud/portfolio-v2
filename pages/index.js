@@ -37,8 +37,7 @@ const useStyles = makeStyles((theme) =>({
         //overflow: 'hidden',
     },
     panel: {
-       minHeight: '100vh',
-        backgroundColor: 'rgb(64,64,64)'
+        minHeight: '100vh',
     },
     white: {
         backgroundColor: 'white',
@@ -104,11 +103,12 @@ export default function Home() {
                         </div>
                     </Scene>
 
-                    <Scene pin>
+                    <Scene pin duration={"1%"}>
                         <div className={classes.panel}>
                             <WebProjects/>
                         </div>
                     </Scene>
+
                     <Scene pin>
                         <div className={classes.panel + ' ' + classes.white}>
                             <Typography variant={"h2"} component={"h2"}>

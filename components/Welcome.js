@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
             }
         },
     },
-    persoOrdi: {
+    perso: {
         width: '100%',
         height: '100%',
     },
@@ -98,7 +98,7 @@ export default function Welcome(){
                     </Grid>
                     <Grid item sm={8} md={6}>
                         <Container>
-                            <img className={classes.persoOrdi} src={"/perso_ordi.png"} alt={""}/>
+                            <img className={classes.perso} src={"/img/persos/perso_ordi.png"} alt={""}/>
                         </Container>
                     </Grid>
                 </Grid>

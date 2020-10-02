@@ -26,15 +26,21 @@ const stdTheme = {
     },
     palette: {
         primary: {
-            main: 'rgb(0,0,0)'
+            main: 'rgb(0,0,0)',
         },
         secondary: {
             main: 'rgb(60,60,60)'
         },
         text: {
-            primary: 'white',
+            primary: '#fff',
             secondary: 'rgb(175,175,175)',
+            primaryBlack: '#000',
+            secondaryBlack: 'rgb(45,45,45)'
         },
+        background: {
+            default: '#fff',
+            paper: 'rgb(245,245,245)'
+        }
     }
 };
 
